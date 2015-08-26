@@ -1,0 +1,27 @@
+<body>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h3>Get forecast by city</h3>
+        <div class="form-group"  >
+            <form name="myForm" ng-submit="submit()" >
+                <label><h4>Enter the city name:</h4></label>
+            <input type="text" class="form-control" ng-model="city"><br>
+                <label><h4>Enter the number of days:</h4></label>
+            <input type="text" class="form-control" ng-model="days" name="days" required  >
+                 <div ng-messages="myForm.days.$error" role="alert"  style="color:red">
+    
+                     
+                     <br>
+                      <input type="submit" class="btn btn-primary"  value="Get Forecast" ></div>
+        </form>
+                
+        <div class="col-md-6 col-md-offset-4">
+               
+
+        </div>
+    
+    </div>
+
+</div>
+
+    </body>

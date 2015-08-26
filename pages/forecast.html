@@ -1,0 +1,20 @@
+
+    <div >
+<div class="row" >
+    
+    <div class="col-md-12" ng-repeat="w in weatherResult.list">
+    <div class="panel panel-default">
+        <div class="panel panel-heading">
+        <div class="panet-title">
+        {{ convertToDate(w.dt) | date : "EEE MMMM d, y " }}
+            </div></div>
+        <div class="panel-body abc" >Daytime Temperature in Fahrenhiet: {{ convertToFarheniet(w.temp.day) }}<br>Daytime Temperature in Celcius: {{ convertToCelcius(w.temp.day) }} </div>
+        
+        
+        </div>
+    
+    
+    </div>
+    </div>
+
+</div>
