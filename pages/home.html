@@ -7,9 +7,10 @@
                 <label><h4>Enter the city name:</h4></label>
             <input type="text" class="form-control" ng-model="city"><br>
                 <label><h4>Enter the number of days:</h4></label>
-            <input type="text" class="form-control" ng-model="days" name="days" required  >
-                 <div ng-messages="myForm.days.$error" role="alert"  style="color:red">
-    
+            <<input type="number" class="form-control" ng-model="days" name="days" min="1" max="14" required  >
+                 <div ng-messages="myForm.days.$error"  style="color:red">
+    <span class="error" ng-show="myForm.days.$error.number" role="alert" >
+      Not valid number!</span>
                      
                      <br>
                       <input type="submit" class="btn btn-primary"  value="Get Forecast" ></div>
